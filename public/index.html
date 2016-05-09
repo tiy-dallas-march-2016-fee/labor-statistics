@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Labor Statistics</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1>Labor Statistics</h1>
+
+    <input type="text" id="query" />
+
+    <table>
+      <thead>
+        <tr>
+          <th>Industry Code</th>
+          <th>Industry Name</th>
+          <th>Total Annual Wages</th>
+          <th>Annual Average Weekly Wage</th>
+        </tr>
+      </thead>
+      <tbody>
+
+
+
+      </tbody>
+    </table>
+
+    <div id="output">
+    </div>
+
+
+
+    <script id="template" type="text/html">
+
+      <tr>
+        <td class="hello"><%= industryCode %></td>
+        <td><%= industryName %></td>
+        <td><%= totalAnnualWages %></td>
+        <td><%= annualAverageWeeklyWage %></td>
+      </tr>
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/lodash/4.12.0/lodash.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+    <script src="script.js"></script>
+    <script>LaborStatistics.start();</script>
+
+  </body>
+
+</html>
